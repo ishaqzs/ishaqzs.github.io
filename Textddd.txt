@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selector</title>
+    <style>
+        .language-selector {
+            position: relative;
+            display: inline-block;
+        }
+
+        .language-dropdown {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .language-dropdown a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .language-dropdown a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .language-selector:hover .language-dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="language-selector">
+    <button>More Languages</button>
+    <div class="language-dropdown">
+        <a href="?lang=en">English</a>
+        <a href="?lang=es">Spanish</a>
+        <a href="?lang=fr">French</a>
+        <a href="?lang=de">German</a>
+        <a href="?lang=zh">Chinese</a>
+        <a href="?lang=ru">Russian</a>
+        <a href="?lang=jp">Japanese</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مخ نسته</title>
+  <style>
+    /* Basic styling and galaxy background */
+    body {
+      background: radial-gradient(circle, rgba(18,18,48,1) 0%, rgba(1,1,22,1) 100%);
+      background-image: url('https://source.unsplash.com/1600x900/?galaxy,space');
+      background-size: cover;
+      background-blend-mode: overlay;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      margin: 0;
+      text-align: center;
+    }
+
+    /* Floating error text */
+    h1 {
+      font-size: 5em;
+      color: #ff007a;
+      margin: 0;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    p {
+      font-size: 1.5em;
+      color: #b5b5b5;
+      margin: 20px 0;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Floating animation */
+    @keyframes float {
+      0%, 100% { transform: translateY(-20px); }
+      50% { transform: translateY(20px); }
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Wormhole button */
+    .button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: #1b1b32;
+      background-color: #ff007a;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .button:hover {
+      animation: spin 1s infinite linear;
+    }
+
+    /* Pulse animation for button */
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px rgba(255, 0, 122, 0.5), 0 0 20px rgba(255, 0, 122, 0.5); }
+      100% { box-shadow: 0 0 20px rgba(255, 0, 122, 0.8), 0 0 30px rgba(255, 0, 122, 0.8); }
+    }
+
+    /* Spin animation for button */
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>اووئ</h1>
+  <p>دلته خو ونېکه شئ لا سته</p>
+  <button class="button" onclick="teleport()">دلته کښې‌کاږه</button>
+
+  <script>
+    // Teleport home function with a small delay for effect
+    function teleport() {
+      setTimeout(() => {
+        window.location.href = '/';
+      }, 500);
+    }
+  </script>
+
+</body>
+</html>
